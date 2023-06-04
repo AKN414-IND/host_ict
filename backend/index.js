@@ -23,4 +23,12 @@ const blogsRoutes = require('./routes/blogs');
 app.use('/api/users', usersRoutes);
 app.use('/api/blogs', blogsRoutes);
 
-module.exports = app;
+app.get('/', async (req, res) => {
+  res.sendFile('/home/arun/ICT_project_final/frontend/src/pages/LoginPage.js');
+});
+
+const port = 5001;
+
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}`);
+});
