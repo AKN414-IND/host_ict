@@ -1,6 +1,10 @@
 {
+  "name": "my-application",
+  "version": "1.0.0",
+  "description": "My Application",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "dependencies": {
     "axios": "^1.4.0",
